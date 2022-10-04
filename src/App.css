@@ -1,3 +1,12 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('./assets/coding-gd39062f82_1920.jpg');
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#submit {
+  border-radius: 40%;
+  font-size: large;
+}
+
+.register {
+  /* border-radius: 20%; */
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.294);
+}
+
+input {
+  font-size: large;
+}
+.table-container{
+  display: flex;
+  justify-content: center;
+}
+
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
 }
