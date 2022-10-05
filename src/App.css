@@ -49,12 +49,13 @@ body {
 #submit {
   border-radius: 40%;
   font-size: large;
+  background-color: rgba(252, 251, 251, 0.777);
 }
 
 .register {
-  /* border-radius: 20%; */
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.294);
+  height: 100vh;
 }
 
 input {
@@ -68,4 +69,11 @@ input {
 table, th, td {
   border: 3px solid black;
   border-collapse: collapse;
+  padding: 10px;
+}
+
+#delete {
+  background-color: rgba(248, 245, 245, 0.541);
+  border-radius: 40%;
+  font-size: medium;
 }

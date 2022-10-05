@@ -34,69 +34,77 @@ function App() {
   return (
     <div className="register">
       <h1>Register</h1>
+      <br/>
       <form onSubmit={handleSubmit}>
         <div>
           <div type="label">Name:</div>
           <input
             name="name"
-            placeholder="name"
+            placeholder="Enter your name..."
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
+        <br/>
 
         <div>
           <div type="label">Surname:</div>
           <input
             name="surname"
-            placeholder="surname"
+            placeholder="Enter your surname..."
             value={surname}
             onChange={(e) => setSurname(e.target.value)}
           />
         </div>
+        <br/>
 
         <div>
           <div type="label">Email:</div>
           <input
             name="email"
-            placeholder="email"
+            placeholder="Enter your email..."
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
+        <br/>
 
         <div>
           <div type="label">Id Number:</div>
           <input
             name="idNumber"
-            placeholder="id"
+            placeholder="Enter your id number..."
             value={idNumber}
             onChange={(e) => setIdNumber(e.target.value)}
           />
         </div>
+        <br/>
 
         <div>
           <div type="label">Phone Number:</div>
           <input
             name="phone"
-            placeholder="phone"
+            placeholder="Enter your phone no..."
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
         </div>
+        <br/>
 
         <button id="submit">Submit</button>
       </form>
       <br />
+      <br />
+
       <div className="table-container">
         <table>
           <thead>
             <tr>
               <th>Name</th>
               <th>Surname</th>
-              <th>Email</th>
-              <th>Id</th>
-              <th>Phone</th>
+              <th>Email Address</th>
+              <th>Id Number</th>
+              <th>Cellphone Number</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -110,7 +118,7 @@ function App() {
                 <td>{item.phone}</td>
                 <td>
                   {" "}
-                  <button onClick={() => handleDelete(item.id)}>Delete</button>
+                  <button id="delete" onClick={() => handleDelete(item.id)}>Delete</button>
                 </td>
               </tr>
             ))}
